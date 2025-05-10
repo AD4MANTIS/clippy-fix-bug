@@ -2,14 +2,12 @@ fn main() {
     println!("Hello, world!");
 }
 
-type Token = String;
-
 pub struct Lexer {
-    tokens: Vec<Token>,
+    tokens: Vec<String>,
 }
 
 impl Lexer {
-    pub fn peek(&self) -> Option<&Token> {
+    pub fn peek(&self) -> Option<&String> {
         self.tokens.last()
     }
 }
